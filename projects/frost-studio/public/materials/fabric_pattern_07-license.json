@@ -1,0 +1,31 @@
+{
+  "id": "fabric_pattern_07",
+  "authors": {
+    "Rob Tuytel": "All"
+  },
+  "source": "https://polyhaven.com/a/fabric_pattern_07",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "scale": "30x30 cm",
+  "downloaded": "2026-09-24",
+  "files": [
+    {
+      "file": "public/materials/fabric_pattern_07-nor_gl.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_07/fabric_pattern_07_nor_gl_1k.jpg",
+      "bytes": 828071,
+      "md5": "cdbbc2ebe5d75f6edd66ba090f3be49f"
+    },
+    {
+      "file": "public/materials/fabric_pattern_07-Rough.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_07/fabric_pattern_07_rough_1k.jpg",
+      "bytes": 488744,
+      "md5": "28f47eb9de3e4ebe1dc519f601335fc4"
+    },
+    {
+      "file": "public/materials/fabric_pattern_07-AO.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_07/fabric_pattern_07_ao_1k.jpg",
+      "bytes": 416307,
+      "md5": "ba4048111f61b4fbe6ec4b4c5c9cc0cf"
+    }
+  ]
+}

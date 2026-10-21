@@ -1,0 +1,37 @@
+{
+  "id": "wood_floor",
+  "authors": {
+    "Dimitrios Savva": "All"
+  },
+  "source": "https://polyhaven.com/a/wood_floor",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "scale": "scene scale estimated",
+  "downloaded": "2026-09-24",
+  "files": [
+    {
+      "file": "public/materials/wood_floor-Diffuse.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_diff_1k.jpg",
+      "bytes": 734493,
+      "md5": "b7e927d2bf2f8f103820ff3890c8407c"
+    },
+    {
+      "file": "public/materials/wood_floor-nor_gl.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_nor_gl_1k.jpg",
+      "bytes": 423303,
+      "md5": "620f174d2c09b579c5d02d37b2106668"
+    },
+    {
+      "file": "public/materials/wood_floor-Rough.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_rough_1k.jpg",
+      "bytes": 527754,
+      "md5": "36146634f1dbd1bc30cd071857584c10"
+    },
+    {
+      "file": "public/materials/wood_floor-AO.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_ao_1k.jpg",
+      "bytes": 693227,
+      "md5": "14cb478dcc8d3b7ea8a64c8a71d5eced"
+    }
+  ]
+}

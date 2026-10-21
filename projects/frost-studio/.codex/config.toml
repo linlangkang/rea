@@ -1,0 +1,7 @@
+# Project-only MCP registration. A new Codex session in this project loads it after trust approval.
+# REA is a development tool and never enters the browser runtime.
+[mcp_servers.rea]
+command = "cmd.exe"
+args = ["/d", "/c", "npx", "--yes", "rea-agents@6.7.0", "mcp"]
+startup_timeout_sec = 30
+tool_timeout_sec = 300

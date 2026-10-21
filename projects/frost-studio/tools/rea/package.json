@@ -1,0 +1,6 @@
+{
+  "name": "frost-analysis-tools",
+  "private": true,
+  "description": "项目隔离的 REA 分析工具，不进入网页运行时",
+  "dependencies": { "rea-agents": "6.7.0" }
+}

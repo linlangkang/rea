@@ -1,0 +1,37 @@
+{
+  "id": "marble_01",
+  "authors": {
+    "Rob Tuytel": "All"
+  },
+  "source": "https://polyhaven.com/a/marble_01",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "scale": "scene scale estimated",
+  "downloaded": "2026-09-24",
+  "files": [
+    {
+      "file": "public/materials/marble_01-Diffuse.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/marble_01/marble_01_diff_1k.jpg",
+      "bytes": 305029,
+      "md5": "04325ced5018eb8a2e598a4ef69cb176"
+    },
+    {
+      "file": "public/materials/marble_01-nor_gl.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/marble_01/marble_01_nor_gl_1k.jpg",
+      "bytes": 110230,
+      "md5": "fa073d722cde733c1bd6cc6e8897c8e3"
+    },
+    {
+      "file": "public/materials/marble_01-Rough.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/marble_01/marble_01_rough_1k.jpg",
+      "bytes": 91848,
+      "md5": "59cef1be1b7376c9d0dcc7a64adf7882"
+    },
+    {
+      "file": "public/materials/marble_01-AO.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/marble_01/marble_01_ao_1k.jpg",
+      "bytes": 196544,
+      "md5": "380e3cd3df21914dc17156d2b921277d"
+    }
+  ]
+}

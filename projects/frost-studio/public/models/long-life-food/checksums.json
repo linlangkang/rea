@@ -1,0 +1,22 @@
+﻿[
+    {
+        "verified":  true,
+        "md5":  "230043dc547be2c3be0d7895f317d36e",
+        "file":  "textures/long_life_food_nor_gl_1k.jpg"
+    },
+    {
+        "verified":  true,
+        "md5":  "572a480d7cf1b01e99c7b98dd21969dd",
+        "file":  "textures/long_life_food_diff_1k.jpg"
+    },
+    {
+        "verified":  true,
+        "md5":  "417d9dc995b0aa98d18d8ff742a3ee6f",
+        "file":  "textures/long_life_food_arm_1k.jpg"
+    },
+    {
+        "verified":  true,
+        "md5":  "c2920566fe14cea54121ba23450af26b",
+        "file":  "long_life_food.bin"
+    }
+]

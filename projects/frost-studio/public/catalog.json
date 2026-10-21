@@ -1,0 +1,1529 @@
+{
+  "schemaVersion": 1,
+  "products": [
+    {
+      "id": "cpu",
+      "category": "CPU",
+      "brand": "AMD",
+      "series": "Ryzen 7 9800X3D",
+      "model": "Ryzen 7 9800X3D"
+    },
+    {
+      "id": "gpu",
+      "category": "显卡",
+      "brand": "MSI",
+      "series": "RTX 5070 Ti 16G GAMING TRIO OC WHITE",
+      "model": "RTX 5070 Ti 16G GAMING TRIO OC WHITE"
+    },
+    {
+      "id": "board",
+      "category": "主板",
+      "brand": "MSI",
+      "series": "MPG B850 EDGE TI WIFI",
+      "model": "MPG B850 EDGE TI WIFI"
+    },
+    {
+      "id": "ram",
+      "category": "内存",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "冰晶 DDR5 64GB（32GB×2 套装）"
+    },
+    {
+      "id": "ssd",
+      "category": "固态",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "NVMe 2TB 2280"
+    },
+    {
+      "id": "psu",
+      "category": "电源",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "白色全模组 850W"
+    },
+    {
+      "id": "aio",
+      "category": "散热",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "冰川 360 一体式水冷"
+    },
+    {
+      "id": "fan",
+      "category": "风扇",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "冰蓝 ARGB 120"
+    },
+    {
+      "id": "strip",
+      "category": "灯带",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "冰蓝柔光灯带"
+    },
+    {
+      "id": "case",
+      "category": "机箱",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "FROST 全景海景房"
+    },
+    {
+      "id": "monitor",
+      "category": "显示器",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "冰境 27 · QHD 180Hz"
+    },
+    {
+      "id": "laptop",
+      "category": "笔记本",
+      "brand": "联想",
+      "series": "拯救者 R9000P 2026 冰魄白 · 83QC0003CD",
+      "model": "拯救者 R9000P 2026 冰魄白 · 83QC0003CD"
+    },
+    {
+      "id": "keyboard",
+      "category": "键盘",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "FROST 87 蓝白机械键盘"
+    },
+    {
+      "id": "mouse",
+      "category": "鼠标",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "云翼无线鼠标"
+    },
+    {
+      "id": "headset",
+      "category": "耳机",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "冰川头戴耳机"
+    },
+    {
+      "id": "desk",
+      "category": "桌子",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "冰原电竞桌 280"
+    },
+    {
+      "id": "chair",
+      "category": "椅子",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "极地蓝白电竞椅"
+    },
+    {
+      "id": "cable",
+      "category": "线材",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "白色 DP / USB-C 理线套组"
+    },
+    {
+      "id": "dock",
+      "category": "扩展坞",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "银白 USB-C 桌面扩展坞"
+    },
+    {
+      "id": "bed",
+      "category": "床",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "云屿双人床"
+    },
+    {
+      "id": "sofa",
+      "category": "沙发",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "云雾三人长沙发"
+    },
+    {
+      "id": "tv",
+      "category": "电视",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "85 英寸客厅屏幕"
+    },
+    {
+      "id": "fridge",
+      "category": "冰箱",
+      "brand": "测试规格",
+      "series": "原创演示",
+      "model": "月白双门冰箱"
+    },
+    {
+      "id": "dex",
+      "category": "鼠标",
+      "brand": "Logitech G",
+      "series": "PRO X SUPERLIGHT 2 DEX",
+      "model": "PRO X SUPERLIGHT 2 DEX"
+    },
+    {
+      "id": "pro2",
+      "category": "鼠标",
+      "brand": "Logitech G",
+      "series": "PRO 2 LIGHTSPEED",
+      "model": "PRO 2 LIGHTSPEED"
+    },
+    {
+      "id": "tkl-rapid",
+      "category": "键盘",
+      "brand": "Logitech G",
+      "series": "PRO X TKL RAPID",
+      "model": "PRO X TKL RAPID"
+    },
+    {
+      "id": "3500x",
+      "category": "机箱",
+      "brand": "CORSAIR",
+      "series": "3500X",
+      "model": "3500X"
+    },
+    {
+      "id": "3500x-argb",
+      "category": "机箱",
+      "brand": "CORSAIR",
+      "series": "3500X ARGB",
+      "model": "3500X ARGB"
+    },
+    {
+      "id": "icue-link-3500x-rgb",
+      "category": "机箱",
+      "brand": "CORSAIR",
+      "series": "iCUE LINK 3500X RGB",
+      "model": "iCUE LINK 3500X RGB"
+    },
+    {
+      "id": "evo-1000",
+      "category": "固态",
+      "brand": "Samsung",
+      "series": "990 EVO Plus 1TB",
+      "model": "990 EVO Plus 1TB"
+    },
+    {
+      "id": "evo-2000",
+      "category": "固态",
+      "brand": "Samsung",
+      "series": "990 EVO Plus 2TB",
+      "model": "990 EVO Plus 2TB"
+    },
+    {
+      "id": "evo-4000",
+      "category": "固态",
+      "brand": "Samsung",
+      "series": "990 EVO Plus 4TB",
+      "model": "990 EVO Plus 4TB"
+    },
+    {
+      "id": "g522",
+      "category": "耳机",
+      "brand": "Logitech G",
+      "series": "G522 LIGHTSPEED",
+      "model": "G522 LIGHTSPEED"
+    }
+  ],
+  "skus": [
+    {
+      "id": "cpu",
+      "productId": "cpu",
+      "label": "Ryzen 7 9800X3D",
+      "officialColor": null,
+      "releaseDate": "2024-11-07",
+      "marketingYear": null,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "socket": "AM5",
+        "tdp": 120
+      },
+      "sourceIds": [
+        "cpu-source"
+      ],
+      "assetId": "cpu"
+    },
+    {
+      "id": "gpu",
+      "productId": "gpu",
+      "label": "RTX 5070 Ti 16G GAMING TRIO OC WHITE",
+      "officialColor": "白色",
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "partial",
+      "dimensionsMm": [
+        338,
+        50,
+        140
+      ],
+      "specs": {
+        "gpuLength": 338,
+        "gpuThickness": 50,
+        "watts": 300,
+        "recommendedPsu": 750,
+        "connector": "16-pin",
+        "dp": 3,
+        "hdmi": 1
+      },
+      "sourceIds": [
+        "gpu-source"
+      ],
+      "assetId": "gpu"
+    },
+    {
+      "id": "board",
+      "productId": "board",
+      "label": "MPG B850 EDGE TI WIFI",
+      "officialColor": "银白色",
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "partial",
+      "dimensionsMm": [
+        244,
+        305,
+        20
+      ],
+      "specs": {
+        "socket": "AM5",
+        "ddr": "DDR5",
+        "slots": 4,
+        "maxMemory": 256,
+        "form": "ATX",
+        "ssdInterfaces": [
+          "NVMe"
+        ],
+        "ssdSizes": [
+          "2280",
+          "2260",
+          "22110"
+        ],
+        "m2Slots": 4
+      },
+      "sourceIds": [
+        "board-source"
+      ],
+      "assetId": "board"
+    },
+    {
+      "id": "ram",
+      "productId": "ram",
+      "label": "冰晶 DDR5 64GB（32GB×2 套装）",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        8,
+        44,
+        135
+      ],
+      "specs": {
+        "ddr": "DDR5",
+        "capacity": 64,
+        "sticks": 2
+      },
+      "sourceIds": [],
+      "assetId": "ram"
+    },
+    {
+      "id": "ssd",
+      "productId": "ssd",
+      "label": "NVMe 2TB 2280",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        22,
+        4,
+        80
+      ],
+      "specs": {
+        "capacity": 2000,
+        "ssdInterface": "NVMe",
+        "ssdSize": "2280"
+      },
+      "sourceIds": [],
+      "assetId": "ssd"
+    },
+    {
+      "id": "psu",
+      "productId": "psu",
+      "label": "白色全模组 850W",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        150,
+        86,
+        150
+      ],
+      "specs": {
+        "watts": 850,
+        "connectors": [
+          "16-pin",
+          "8-pin"
+        ]
+      },
+      "sourceIds": [],
+      "assetId": "psu"
+    },
+    {
+      "id": "aio",
+      "productId": "aio",
+      "label": "冰川 360 一体式水冷",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        120,
+        52,
+        394
+      ],
+      "specs": {
+        "radiator": 360
+      },
+      "sourceIds": [],
+      "assetId": "aio"
+    },
+    {
+      "id": "fan",
+      "productId": "fan",
+      "label": "冰蓝 ARGB 120",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        120,
+        120,
+        25
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "fan"
+    },
+    {
+      "id": "strip",
+      "productId": "strip",
+      "label": "冰蓝柔光灯带",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        8,
+        8,
+        400
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "strip"
+    },
+    {
+      "id": "case",
+      "productId": "case",
+      "label": "FROST 全景海景房",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        285,
+        480,
+        450
+      ],
+      "specs": {
+        "gpuClearance": 400,
+        "thicknessClearance": 80,
+        "forms": [
+          "ATX",
+          "mATX"
+        ],
+        "radiators": [
+          360
+        ],
+        "radiatorClearance": true
+      },
+      "sourceIds": [],
+      "assetId": "case"
+    },
+    {
+      "id": "monitor",
+      "productId": "monitor",
+      "label": "冰境 27 · QHD 180Hz",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        615,
+        365,
+        50
+      ],
+      "specs": {
+        "resolution": "2560×1440",
+        "hz": 180,
+        "dp": 1,
+        "hdmi": 1
+      },
+      "sourceIds": [],
+      "assetId": "monitor"
+    },
+    {
+      "id": "laptop",
+      "productId": "laptop",
+      "label": "拯救者 R9000P 2026 冰魄白 · 83QC0003CD",
+      "officialColor": "冰魄白",
+      "releaseDate": null,
+      "marketingYear": 2026,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "productCode": "83QC0003CD",
+        "cpuModel": "AMD Ryzen 9 8945HX",
+        "gpuModel": "GeForce RTX 5060 Laptop 8GB",
+        "capacity": 16,
+        "sticks": 1,
+        "ddr": "DDR5",
+        "storageGB": 1000,
+        "screenInches": 16,
+        "resolution": "2560×1600",
+        "hz": 240,
+        "thicknessRangeMm": [
+          21.9,
+          26.7
+        ],
+        "weightKg": 2.5
+      },
+      "sourceIds": [
+        "laptop-source"
+      ],
+      "assetId": "laptop"
+    },
+    {
+      "id": "keyboard",
+      "productId": "keyboard",
+      "label": "FROST 87 蓝白机械键盘",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        360,
+        30,
+        140
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "keyboard"
+    },
+    {
+      "id": "mouse",
+      "productId": "mouse",
+      "label": "云翼无线鼠标",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        65,
+        40,
+        120
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "mouse"
+    },
+    {
+      "id": "headset",
+      "productId": "headset",
+      "label": "冰川头戴耳机",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        180,
+        210,
+        90
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "headset"
+    },
+    {
+      "id": "desk",
+      "productId": "desk",
+      "label": "冰原电竞桌 280",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        2800,
+        750,
+        900
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "desk"
+    },
+    {
+      "id": "chair",
+      "productId": "chair",
+      "label": "极地蓝白电竞椅",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        650,
+        1250,
+        650
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "chair"
+    },
+    {
+      "id": "cable",
+      "productId": "cable",
+      "label": "白色 DP / USB-C 理线套组",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        10,
+        10,
+        1500
+      ],
+      "specs": {
+        "video": true,
+        "pd": 100
+      },
+      "sourceIds": [],
+      "assetId": "cable"
+    },
+    {
+      "id": "dock",
+      "productId": "dock",
+      "label": "银白 USB-C 桌面扩展坞",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        160,
+        25,
+        70
+      ],
+      "specs": {
+        "video": true,
+        "pd": 100
+      },
+      "sourceIds": [],
+      "assetId": "dock"
+    },
+    {
+      "id": "bed",
+      "productId": "bed",
+      "label": "云屿双人床",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        1800,
+        500,
+        2150
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "bed"
+    },
+    {
+      "id": "sofa",
+      "productId": "sofa",
+      "label": "云雾三人长沙发",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        2800,
+        850,
+        950
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "sofa"
+    },
+    {
+      "id": "tv",
+      "productId": "tv",
+      "label": "85 英寸客厅屏幕",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        1900,
+        1090,
+        60
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "tv"
+    },
+    {
+      "id": "fridge",
+      "productId": "fridge",
+      "label": "月白双门冰箱",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        700,
+        1800,
+        700
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "fridge"
+    },
+    {
+      "id": "desk-wide",
+      "productId": "desk",
+      "label": "冰原电竞桌 320 · 加宽演示款",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        3200,
+        750,
+        1000
+      ],
+      "specs": {},
+      "sourceIds": [],
+      "assetId": "desk"
+    },
+    {
+      "id": "case-tall",
+      "productId": "case",
+      "label": "FROST XL · 加高演示款",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": null,
+      "status": "demo",
+      "dimensionsMm": [
+        310,
+        530,
+        480
+      ],
+      "specs": {
+        "gpuClearance": 420,
+        "thicknessClearance": 90,
+        "forms": [
+          "ATX",
+          "mATX"
+        ],
+        "radiators": [
+          360
+        ],
+        "radiatorClearance": true
+      },
+      "sourceIds": [],
+      "assetId": "case"
+    },
+    {
+      "id": "dex-0",
+      "productId": "dex",
+      "label": "PRO X SUPERLIGHT 2 DEX · 白色",
+      "officialColor": "白色",
+      "releaseDate": "2024-09-17",
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {},
+      "sourceIds": [
+        "logi-pro-2024"
+      ],
+      "assetId": "dex"
+    },
+    {
+      "id": "dex-1",
+      "productId": "dex",
+      "label": "PRO X SUPERLIGHT 2 DEX · 黑色",
+      "officialColor": "黑色",
+      "releaseDate": "2024-09-17",
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {},
+      "sourceIds": [
+        "logi-pro-2024"
+      ],
+      "assetId": "dex"
+    },
+    {
+      "id": "dex-2",
+      "productId": "dex",
+      "label": "PRO X SUPERLIGHT 2 DEX · 粉色",
+      "officialColor": "粉色",
+      "releaseDate": "2024-09-17",
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {},
+      "sourceIds": [
+        "logi-pro-2024"
+      ],
+      "assetId": "dex"
+    },
+    {
+      "id": "pro2-0",
+      "productId": "pro2",
+      "label": "PRO 2 LIGHTSPEED · 白色",
+      "officialColor": "白色",
+      "releaseDate": "2024-09-17",
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {},
+      "sourceIds": [
+        "logi-pro-2024"
+      ],
+      "assetId": "pro2"
+    },
+    {
+      "id": "pro2-1",
+      "productId": "pro2",
+      "label": "PRO 2 LIGHTSPEED · 黑色",
+      "officialColor": "黑色",
+      "releaseDate": "2024-09-17",
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {},
+      "sourceIds": [
+        "logi-pro-2024"
+      ],
+      "assetId": "pro2"
+    },
+    {
+      "id": "pro2-2",
+      "productId": "pro2",
+      "label": "PRO 2 LIGHTSPEED · 粉色",
+      "officialColor": "粉色",
+      "releaseDate": "2024-09-17",
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {},
+      "sourceIds": [
+        "logi-pro-2024"
+      ],
+      "assetId": "pro2"
+    },
+    {
+      "id": "tkl-rapid-0",
+      "productId": "tkl-rapid",
+      "label": "PRO X TKL RAPID · 白色",
+      "officialColor": "白色",
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {},
+      "sourceIds": [
+        "logi-pro-2024"
+      ],
+      "assetId": "tkl-rapid"
+    },
+    {
+      "id": "tkl-rapid-1",
+      "productId": "tkl-rapid",
+      "label": "PRO X TKL RAPID · 黑色",
+      "officialColor": "黑色",
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {},
+      "sourceIds": [
+        "logi-pro-2024"
+      ],
+      "assetId": "tkl-rapid"
+    },
+    {
+      "id": "tkl-rapid-2",
+      "productId": "tkl-rapid",
+      "label": "PRO X TKL RAPID · 粉色",
+      "officialColor": "粉色",
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {},
+      "sourceIds": [
+        "logi-pro-2024"
+      ],
+      "assetId": "tkl-rapid"
+    },
+    {
+      "id": "3500x-0",
+      "productId": "3500x",
+      "label": "3500X · 白色",
+      "officialColor": "白色",
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "forms": [
+          "Mini-ITX",
+          "mATX",
+          "ATX",
+          "EATX"
+        ],
+        "radiators": [
+          360
+        ]
+      },
+      "sourceIds": [
+        "corsair-3500"
+      ],
+      "assetId": "3500x"
+    },
+    {
+      "id": "3500x-1",
+      "productId": "3500x",
+      "label": "3500X · 黑色",
+      "officialColor": "黑色",
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "forms": [
+          "Mini-ITX",
+          "mATX",
+          "ATX",
+          "EATX"
+        ],
+        "radiators": [
+          360
+        ]
+      },
+      "sourceIds": [
+        "corsair-3500"
+      ],
+      "assetId": "3500x"
+    },
+    {
+      "id": "3500x-argb-0",
+      "productId": "3500x-argb",
+      "label": "3500X ARGB · 白色",
+      "officialColor": "白色",
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "forms": [
+          "Mini-ITX",
+          "mATX",
+          "ATX",
+          "EATX"
+        ],
+        "radiators": [
+          360
+        ]
+      },
+      "sourceIds": [
+        "corsair-3500"
+      ],
+      "assetId": "3500x-argb"
+    },
+    {
+      "id": "3500x-argb-1",
+      "productId": "3500x-argb",
+      "label": "3500X ARGB · 黑色",
+      "officialColor": "黑色",
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "forms": [
+          "Mini-ITX",
+          "mATX",
+          "ATX",
+          "EATX"
+        ],
+        "radiators": [
+          360
+        ]
+      },
+      "sourceIds": [
+        "corsair-3500"
+      ],
+      "assetId": "3500x-argb"
+    },
+    {
+      "id": "icue-link-3500x-rgb-0",
+      "productId": "icue-link-3500x-rgb",
+      "label": "iCUE LINK 3500X RGB · 白色",
+      "officialColor": "白色",
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "forms": [
+          "Mini-ITX",
+          "mATX",
+          "ATX",
+          "EATX"
+        ],
+        "radiators": [
+          360
+        ]
+      },
+      "sourceIds": [
+        "corsair-3500"
+      ],
+      "assetId": "icue-link-3500x-rgb"
+    },
+    {
+      "id": "icue-link-3500x-rgb-1",
+      "productId": "icue-link-3500x-rgb",
+      "label": "iCUE LINK 3500X RGB · 黑色",
+      "officialColor": "黑色",
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "forms": [
+          "Mini-ITX",
+          "mATX",
+          "ATX",
+          "EATX"
+        ],
+        "radiators": [
+          360
+        ]
+      },
+      "sourceIds": [
+        "corsair-3500"
+      ],
+      "assetId": "icue-link-3500x-rgb"
+    },
+    {
+      "id": "evo-1000-0",
+      "productId": "evo-1000",
+      "label": "990 EVO Plus 1TB",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "capacity": 1000,
+        "ssdInterface": "NVMe",
+        "ssdSize": "2280"
+      },
+      "sourceIds": [
+        "samsung-evo"
+      ],
+      "assetId": "evo-1000"
+    },
+    {
+      "id": "evo-2000-0",
+      "productId": "evo-2000",
+      "label": "990 EVO Plus 2TB",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "capacity": 2000,
+        "ssdInterface": "NVMe",
+        "ssdSize": "2280"
+      },
+      "sourceIds": [
+        "samsung-evo"
+      ],
+      "assetId": "evo-2000"
+    },
+    {
+      "id": "evo-4000-0",
+      "productId": "evo-4000",
+      "label": "990 EVO Plus 4TB",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": 2024,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {
+        "capacity": 4000,
+        "ssdInterface": "NVMe",
+        "ssdSize": "2280"
+      },
+      "sourceIds": [
+        "samsung-evo"
+      ],
+      "assetId": "evo-4000"
+    },
+    {
+      "id": "g522-0",
+      "productId": "g522",
+      "label": "G522 LIGHTSPEED",
+      "officialColor": null,
+      "releaseDate": null,
+      "marketingYear": 2025,
+      "status": "partial",
+      "dimensionsMm": null,
+      "specs": {},
+      "sourceIds": [
+        "logi-g522"
+      ],
+      "assetId": "g522"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gpu-source",
+      "url": "https://www.msi.com/Graphics-Card/GeForce-RTX-5070-Ti-16G-GAMING-TRIO-OC-WHITE/Specification",
+      "type": "official",
+      "checkedAt": "2026-09-22",
+      "fields": [
+        "label",
+        "officialColor",
+        "dimensionsMm",
+        "specs.gpuLength",
+        "specs.gpuThickness",
+        "specs.watts",
+        "specs.recommendedPsu",
+        "specs.connector",
+        "specs.dp",
+        "specs.hdmi"
+      ]
+    },
+    {
+      "id": "board-source",
+      "url": "https://www.msi.com/Motherboard/MPG-B850-EDGE-TI-WIFI/Specification",
+      "type": "official",
+      "checkedAt": "2026-09-22",
+      "fields": [
+        "label",
+        "specs.socket",
+        "specs.ddr",
+        "specs.slots",
+        "specs.maxMemory",
+        "specs.form",
+        "specs.ssdInterfaces",
+        "specs.ssdSizes",
+        "specs.m2Slots"
+      ]
+    },
+    {
+      "id": "cpu-source",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+      "type": "official",
+      "checkedAt": "2026-09-23",
+      "fields": [
+        "label",
+        "releaseDate",
+        "specs.socket",
+        "specs.tdp"
+      ]
+    },
+    {
+      "id": "laptop-source",
+      "url": "https://item.lenovo.com.cn/product/1054215.html",
+      "type": "store",
+      "checkedAt": "2026-09-23",
+      "fields": [
+        "label",
+        "officialColor",
+        "specs.productCode",
+        "specs.cpuModel",
+        "specs.gpuModel",
+        "specs.capacity",
+        "specs.sticks",
+        "specs.ddr",
+        "specs.storageGB",
+        "specs.screenInches",
+        "specs.resolution",
+        "specs.hz",
+        "specs.thicknessRangeMm",
+        "specs.weightKg"
+      ]
+    },
+    {
+      "id": "logi-pro-2024",
+      "url": "https://news.logitech.com/press-releases/news-details/2024/Logitech-G-Launches-the-Next-Generation-of-PRO-Series-Mice-and-Keyboard-Designed-With-and-For-the-Worlds-Best-Esports-Athletes/default.aspx",
+      "fields": [
+        "label",
+        "officialColor",
+        "marketingYear"
+      ],
+      "checkedAt": "2026-09-23",
+      "type": "official"
+    },
+    {
+      "id": "corsair-3500",
+      "url": "https://www.corsair.com/newsroom/press-release/corsair-launches-3500x-series-cases-merging-modern-design-with-great-performance",
+      "fields": [
+        "label",
+        "officialColor",
+        "marketingYear",
+        "specs.forms",
+        "specs.radiators"
+      ],
+      "checkedAt": "2026-09-23",
+      "type": "official"
+    },
+    {
+      "id": "samsung-evo",
+      "url": "https://news.samsung.com/global/samsung-launches-990-evo-plus-ssd-with-best-in-class-performance-speeds-supported-by-pcie-4-0",
+      "fields": [
+        "label",
+        "marketingYear",
+        "specs.capacity",
+        "specs.ssdInterface",
+        "specs.ssdSize"
+      ],
+      "checkedAt": "2026-09-23",
+      "type": "official"
+    },
+    {
+      "id": "logi-g522",
+      "url": "https://news.logitech.com/press-releases/news-details/2025/Level-Up-Your-Play-With-the-New-Logitech-G522-Gaming-Headset/default.aspx",
+      "fields": [
+        "label",
+        "marketingYear"
+      ],
+      "checkedAt": "2026-09-23",
+      "type": "official"
+    }
+  ],
+  "assets": [
+    {
+      "id": "cpu",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "CPU"
+    },
+    {
+      "id": "gpu",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "显卡"
+    },
+    {
+      "id": "board",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "主板"
+    },
+    {
+      "id": "ram",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "内存"
+    },
+    {
+      "id": "ssd",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "固态"
+    },
+    {
+      "id": "psu",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "电源"
+    },
+    {
+      "id": "aio",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "散热"
+    },
+    {
+      "id": "fan",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "风扇"
+    },
+    {
+      "id": "strip",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "灯带"
+    },
+    {
+      "id": "case",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "机箱"
+    },
+    {
+      "id": "monitor",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "显示器"
+    },
+    {
+      "id": "laptop",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "笔记本"
+    },
+    {
+      "id": "keyboard",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "键盘"
+    },
+    {
+      "id": "mouse",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "鼠标"
+    },
+    {
+      "id": "headset",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "耳机"
+    },
+    {
+      "id": "desk",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "桌子"
+    },
+    {
+      "id": "chair",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "椅子"
+    },
+    {
+      "id": "cable",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "线材"
+    },
+    {
+      "id": "dock",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "扩展坞"
+    },
+    {
+      "id": "bed",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "床"
+    },
+    {
+      "id": "sofa",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "沙发"
+    },
+    {
+      "id": "tv",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "电视"
+    },
+    {
+      "id": "fridge",
+      "url": null,
+      "license": "本项目原创程序化示意模型，MIT",
+      "unit": "m",
+      "up": "Y",
+      "accuracy": "parametric",
+      "generator": "冰箱"
+    },
+    {
+      "id": "dex",
+      "generator": "鼠标",
+      "accuracy": "parametric",
+      "up": "Y",
+      "unit": "m",
+      "url": null,
+      "license": "本项目原创参数化示意模型，MIT；不代表品牌精确外观"
+    },
+    {
+      "id": "pro2",
+      "generator": "鼠标",
+      "accuracy": "parametric",
+      "up": "Y",
+      "unit": "m",
+      "url": null,
+      "license": "本项目原创参数化示意模型，MIT；不代表品牌精确外观"
+    },
+    {
+      "id": "tkl-rapid",
+      "generator": "键盘",
+      "accuracy": "parametric",
+      "up": "Y",
+      "unit": "m",
+      "url": null,
+      "license": "本项目原创参数化示意模型，MIT；不代表品牌精确外观"
+    },
+    {
+      "id": "3500x",
+      "generator": "机箱",
+      "accuracy": "parametric",
+      "up": "Y",
+      "unit": "m",
+      "url": null,
+      "license": "本项目原创参数化示意模型，MIT；不代表品牌精确外观"
+    },
+    {
+      "id": "3500x-argb",
+      "generator": "机箱",
+      "accuracy": "parametric",
+      "up": "Y",
+      "unit": "m",
+      "url": null,
+      "license": "本项目原创参数化示意模型，MIT；不代表品牌精确外观"
+    },
+    {
+      "id": "icue-link-3500x-rgb",
+      "generator": "机箱",
+      "accuracy": "parametric",
+      "up": "Y",
+      "unit": "m",
+      "url": null,
+      "license": "本项目原创参数化示意模型，MIT；不代表品牌精确外观"
+    },
+    {
+      "id": "evo-1000",
+      "generator": "固态",
+      "accuracy": "parametric",
+      "up": "Y",
+      "unit": "m",
+      "url": null,
+      "license": "本项目原创参数化示意模型，MIT；不代表品牌精确外观"
+    },
+    {
+      "id": "evo-2000",
+      "generator": "固态",
+      "accuracy": "parametric",
+      "up": "Y",
+      "unit": "m",
+      "url": null,
+      "license": "本项目原创参数化示意模型，MIT；不代表品牌精确外观"
+    },
+    {
+      "id": "evo-4000",
+      "generator": "固态",
+      "accuracy": "parametric",
+      "up": "Y",
+      "unit": "m",
+      "url": null,
+      "license": "本项目原创参数化示意模型，MIT；不代表品牌精确外观"
+    },
+    {
+      "id": "g522",
+      "generator": "耳机",
+      "accuracy": "parametric",
+      "up": "Y",
+      "unit": "m",
+      "url": null,
+      "license": "本项目原创参数化示意模型，MIT；不代表品牌精确外观"
+    }
+  ],
+  "quotes": []
+}

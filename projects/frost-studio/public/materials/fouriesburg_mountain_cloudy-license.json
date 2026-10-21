@@ -1,0 +1,20 @@
+{
+  "id": "fouriesburg_mountain_cloudy",
+  "authors": {
+    "Dimitrios Savva": "Photography",
+    "Jarod Guest": "Processing"
+  },
+  "source": "https://polyhaven.com/a/fouriesburg_mountain_cloudy",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "scale": "scene scale estimated",
+  "downloaded": "2026-09-24",
+  "files": [
+    {
+      "file": "public/materials/environment.hdr",
+      "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/fouriesburg_mountain_cloudy_2k.hdr",
+      "bytes": 6083170,
+      "md5": "0426a6bd405c08a9a6873da1015a6326"
+    }
+  ]
+}

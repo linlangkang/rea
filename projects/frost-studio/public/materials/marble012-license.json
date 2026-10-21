@@ -1,0 +1,14 @@
+{
+  "id": "Marble012",
+  "author": "ambientCG",
+  "source": "https://ambientcg.com/view?id=Marble012",
+  "download": "https://ambientcg.com/get?file=Marble012_1K-JPG.zip",
+  "license": "CC0-1.0",
+  "attributionRequired": false,
+  "technique": "procedural PBR material, as stated by the provider",
+  "usedFiles": ["marble012-Diffuse.jpg", "marble012-nor_gl.jpg", "marble012-Rough.jpg"],
+  "resolution": "1K",
+  "sceneScale": "2 meters per repeat, art-directed estimate",
+  "ao": "not supplied; not used",
+  "downloaded": "2026-10-01"
+}
