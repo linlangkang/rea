@@ -1,0 +1,272 @@
+{
+  "generated": "2026-10-21",
+  "sources": "Existing CC0 manifests in public/materials and public/models; original files retained.",
+  "normalConvention": "OpenGL; DirectX green inverted only where explicitly named nor_dx",
+  "packedChannels": "R=AO, G=roughness, B=255 (unused)",
+  "files": [
+    {
+      "logical": "materials/wood_floor-Diffuse.jpg",
+      "runtime": "materials/optimized/wood_floor.color.2d634891408f.webp",
+      "bytes": 185832,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": false,
+      "encoding": "WebP color quality 88",
+      "sourceManifest": "materials/wood_floor-license.json"
+    },
+    {
+      "logical": "materials/wood_floor-nor_gl.jpg",
+      "runtime": "materials/optimized/wood_floor.normal.452247f0d0d1.jpg",
+      "bytes": 423303,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": true,
+      "encoding": "Original JPEG bytes, no re-encode",
+      "sourceManifest": "materials/wood_floor-license.json"
+    },
+    {
+      "logical": "materials/wood_floor-ARM.webp",
+      "runtime": "materials/optimized/wood_floor.arm.d11bb8070aad.webp",
+      "bytes": 275132,
+      "size": [
+        512,
+        512
+      ],
+      "dataMap": true,
+      "encoding": "Lossless WebP",
+      "sourceManifest": "materials/wood_floor-license.json"
+    },
+    {
+      "logical": "materials/fabric_pattern_07-nor_gl.jpg",
+      "runtime": "materials/optimized/fabric_pattern_07.normal.f6955bbdead9.jpg",
+      "bytes": 828071,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": true,
+      "encoding": "Original JPEG bytes, no re-encode",
+      "sourceManifest": "materials/fabric_pattern_07-license.json"
+    },
+    {
+      "logical": "materials/fabric_pattern_07-ARM.webp",
+      "runtime": "materials/optimized/fabric_pattern_07.arm.c171ea06587e.webp",
+      "bytes": 343366,
+      "size": [
+        512,
+        512
+      ],
+      "dataMap": true,
+      "encoding": "Lossless WebP",
+      "sourceManifest": "materials/fabric_pattern_07-license.json"
+    },
+    {
+      "logical": "materials/painted_plaster_wall-Diffuse.jpg",
+      "runtime": "materials/optimized/painted_plaster_wall.color.3196d770e252.webp",
+      "bytes": 221890,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": false,
+      "encoding": "WebP color quality 88",
+      "sourceManifest": "materials/painted_plaster_wall-license.json"
+    },
+    {
+      "logical": "materials/painted_plaster_wall-nor_gl.jpg",
+      "runtime": "materials/optimized/painted_plaster_wall.normal.8eb01647d126.jpg",
+      "bytes": 900461,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": true,
+      "encoding": "Original JPEG bytes, no re-encode",
+      "sourceManifest": "materials/painted_plaster_wall-license.json"
+    },
+    {
+      "logical": "materials/painted_plaster_wall-ARM.webp",
+      "runtime": "materials/optimized/painted_plaster_wall.arm.47810e8a51a4.webp",
+      "bytes": 185324,
+      "size": [
+        512,
+        512
+      ],
+      "dataMap": true,
+      "encoding": "Lossless WebP",
+      "sourceManifest": "materials/painted_plaster_wall-license.json"
+    },
+    {
+      "logical": "materials/marble_01-Diffuse.jpg",
+      "runtime": "materials/optimized/marble_01.color.3546b304a5dd.webp",
+      "bytes": 90070,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": false,
+      "encoding": "WebP color quality 88",
+      "sourceManifest": "materials/marble_01-license.json"
+    },
+    {
+      "logical": "materials/marble_01-nor_gl.jpg",
+      "runtime": "materials/optimized/marble_01.normal.77c2a9b549a6.jpg",
+      "bytes": 110230,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": true,
+      "encoding": "Original JPEG bytes, no re-encode",
+      "sourceManifest": "materials/marble_01-license.json"
+    },
+    {
+      "logical": "materials/marble_01-ARM.webp",
+      "runtime": "materials/optimized/marble_01.arm.106a48638f4b.webp",
+      "bytes": 143410,
+      "size": [
+        512,
+        512
+      ],
+      "dataMap": true,
+      "encoding": "Lossless WebP",
+      "sourceManifest": "materials/marble_01-license.json"
+    },
+    {
+      "logical": "materials/marble012-Diffuse.jpg",
+      "runtime": "materials/optimized/marble012.color.62f3b1c19004.webp",
+      "bytes": 307372,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": false,
+      "encoding": "WebP color quality 88",
+      "sourceManifest": "materials/marble012-license.json"
+    },
+    {
+      "logical": "materials/marble012-nor_gl.jpg",
+      "runtime": "materials/optimized/marble012.normal.5dbdc1966b90.webp",
+      "bytes": 276346,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": true,
+      "encoding": "Lossless WebP",
+      "sourceManifest": "materials/marble012-license.json"
+    },
+    {
+      "logical": "materials/marble012-ARM.webp",
+      "runtime": "materials/optimized/marble012.arm.37f48c416c79.webp",
+      "bytes": 125930,
+      "size": [
+        512,
+        512
+      ],
+      "dataMap": true,
+      "encoding": "Lossless WebP",
+      "sourceManifest": "materials/marble012-license.json"
+    },
+    {
+      "logical": "materials/leather_white-nor_gl.jpg",
+      "runtime": "materials/optimized/leather_white.normal.af05e935eb42.webp",
+      "bytes": 1050780,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": true,
+      "encoding": "Lossless WebP",
+      "sourceManifest": "materials/leather_white-license.json"
+    },
+    {
+      "logical": "materials/leather_white-ARM.webp",
+      "runtime": "materials/optimized/leather_white.arm.f17eaf5b0a0e.webp",
+      "bytes": 135838,
+      "size": [
+        512,
+        512
+      ],
+      "dataMap": true,
+      "encoding": "Lossless WebP",
+      "sourceManifest": "materials/leather_white-license.json"
+    },
+    {
+      "logical": "environment/mountain.png",
+      "runtime": "environment/optimized/mountain.807ec9ae1e74.webp",
+      "bytes": 379178,
+      "size": [
+        1672,
+        941
+      ],
+      "dataMap": false,
+      "encoding": "WebP color quality 88",
+      "sourceManifest": "Project generated landscape; docs/SOURCES.md"
+    },
+    {
+      "logical": "environment/coast.png",
+      "runtime": "environment/optimized/coast.16322982e1f7.webp",
+      "bytes": 400516,
+      "size": [
+        1672,
+        941
+      ],
+      "dataMap": false,
+      "encoding": "WebP color quality 88",
+      "sourceManifest": "Project generated landscape; docs/SOURCES.md"
+    },
+    {
+      "logical": "models/long-life-food/textures/long_life_food_arm_1k.jpg",
+      "runtime": "models/optimized/long_life_food_arm_1k.3e4b9a986e2e.webp",
+      "bytes": 339700,
+      "size": [
+        512,
+        512
+      ],
+      "dataMap": true,
+      "encoding": "Lossless WebP",
+      "sourceManifest": "models/long-life-food/source.json"
+    },
+    {
+      "logical": "models/long-life-food/textures/long_life_food_diff_1k.jpg",
+      "runtime": "models/optimized/long_life_food_diff_1k.e81c6304d2de.webp",
+      "bytes": 167772,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": false,
+      "encoding": "WebP color quality 88",
+      "sourceManifest": "models/long-life-food/source.json"
+    },
+    {
+      "logical": "models/long-life-food/textures/long_life_food_nor_gl_1k.jpg",
+      "runtime": "models/optimized/long_life_food_nor_gl_1k.12d0d6909386.webp",
+      "bytes": 488938,
+      "size": [
+        1024,
+        1024
+      ],
+      "dataMap": true,
+      "encoding": "Lossless WebP",
+      "sourceManifest": "models/long-life-food/source.json"
+    },
+    {
+      "logical": "materials/environment.hdr",
+      "runtime": "materials/optimized/environment.20262a51346b.hdr",
+      "bytes": 408632,
+      "size": [
+        512,
+        256
+      ],
+      "dataMap": true,
+      "encoding": "Linear radiance averaged, RGBE HDR; not an sRGB preview",
+      "sourceManifest": "materials/fouriesburg_mountain_cloudy-license.json"
+    }
+  ]
+}

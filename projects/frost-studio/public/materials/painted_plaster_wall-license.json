@@ -1,0 +1,37 @@
+{
+  "id": "painted_plaster_wall",
+  "authors": {
+    "Amal Kumar": "All"
+  },
+  "source": "https://polyhaven.com/a/painted_plaster_wall",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "scale": "scene scale estimated",
+  "downloaded": "2026-09-24",
+  "files": [
+    {
+      "file": "public/materials/painted_plaster_wall-Diffuse.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_diff_1k.jpg",
+      "bytes": 686726,
+      "md5": "15ba8c1f63a5ab412b1eabe31728540a"
+    },
+    {
+      "file": "public/materials/painted_plaster_wall-nor_gl.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_nor_gl_1k.jpg",
+      "bytes": 900461,
+      "md5": "43fff290583dbdfc9bfa088a2750e840"
+    },
+    {
+      "file": "public/materials/painted_plaster_wall-Rough.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_rough_1k.jpg",
+      "bytes": 354762,
+      "md5": "e076a6360329a2bc18c7397dc50c074a"
+    },
+    {
+      "file": "public/materials/painted_plaster_wall-AO.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_ao_1k.jpg",
+      "bytes": 555806,
+      "md5": "53304166d9a6943d41c7bae037fba208"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "frost-room-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "assets:pack": "python scripts/pack-render-assets.py && node scripts/pack-environment.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "build": "vue-tsc --noEmit && vite build",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "rea:install": "npm ci --prefix tools/rea --ignore-scripts --no-audit --no-fund",
+    "rea:analyze": "node scripts/rea-analysis.mjs",
+    "rea:check": "node scripts/rea-mcp-check.mjs"
+  },
+  "dependencies": {
+    "pinia": "^3.0.3",
+    "three": "^0.180.0",
+    "vue": "^3.5.21",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2",
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "prettier": "3.6.2",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.7",
+    "vitest": "4.1.11",
+    "vue-tsc": "^3.0.8"
+  }
+}

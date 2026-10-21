@@ -1,0 +1,8 @@
+node_modules
+dist
+.git
+output
+test-results
+playwright-report
+*.log
+local-assets

@@ -1,0 +1,9 @@
+// Family-level evidence is deliberately separate from selectable, specific configurations.
+export const research = [
+  { brand:'Lenovo', category:'笔记本', year:2024, models:['Legion 9i (16, 9)','Legion 7i (16, 9)','Legion 5i (16, 9)','Legion Slim 5 (16, 9)','Legion Pro 7i (16, 9)','Legion Pro 5i (16, 9)'], url:'https://news.lenovo.com/pressroom/press-releases/legion-gaming-ecosystem-helping-gamers-reach-their-impossible/' },
+  { brand:'Lenovo', category:'笔记本', year:2025, models:['Legion Pro 7i (16, 10)','Legion Pro 5i (16, 10)','Legion Pro 5 (16, 10)','Legion 7i (16, 10)'], url:'https://news.lenovo.com/pressroom/press-releases/lenovo-legion-unleashes-next-gen-gaming-power-at-ces-2025/' },
+  { brand:'Lenovo', category:'笔记本', year:2026, models:['Legion 7a (16, 11)','Legion 5i (15, 11)','Legion 5a (15, 11)','LOQ 15AHP11','LOQ 15IPH11'], url:'https://news.lenovo.com/pressroom/press-releases/lenovo-levels-up-ces-with-legion-gaming-devices/' },
+  { brand:'Lenovo', category:'显示器', year:2025, models:['Legion Pro 34WD-10'], url:'https://news.lenovo.com/pressroom/press-releases/lenovo-legion-unleashes-next-gen-gaming-power-at-ces-2025/' },
+  { brand:'CORSAIR', category:'散热', year:2024, models:['iCUE LINK TITAN RX RGB'], url:'https://www.corsair.com/newsroom/press-release/corsair-launches-the-new-performance-king-of-its-aio-cooler-lineup-icue-link-titan-rx-rgb' },
+  { brand:'Samsung', category:'冰箱', year:2025, models:['Bespoke AI 4-Door','Bespoke AI French Door','Bespoke AI Side-by-Side'], url:'https://news.samsung.com/global/samsung-unveils-new-refrigerator-lineup-equipped-with-screens-and-enhanced-ai-vision-inside-feature' },
+].flatMap(group=>group.models.map(model=>({brand:group.brand,category:group.category,year:group.year,model,url:group.url,checkedAt:'2026-09-23',status:'系列与宣传年份已核验；地区 SKU、配色和具体配置待核验'})));

@@ -1,0 +1,28 @@
+﻿{
+    "license":  "CC0",
+    "source":  "https://polyhaven.com/a/leather_white",
+    "dimensions":  [
+                       300.00001192092896,
+                       300.00001192092896
+                   ],
+    "files":  [
+                  {
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_white/leather_white_nor_dx_1k.jpg",
+                      "path":  "public/materials/leather_white-nor_dx.jpg",
+                      "channel":  "nor_dx",
+                      "md5":  "97976c458549a7e1b2f917e740404c44"
+                  },
+                  {
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_white/leather_white_rough_1k.jpg",
+                      "path":  "public/materials/leather_white-Rough.jpg",
+                      "channel":  "Rough",
+                      "md5":  "db1052bac557bb6b03fdde325a853af4"
+                  }
+              ],
+    "asset":  "leather_white",
+    "authors":  {
+                    "Rob Tuytel":  "All"
+                },
+    "licenseUrl":  "https://polyhaven.com/license",
+    "resolution":  "1k"
+}
