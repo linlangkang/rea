@@ -1,8 +1,16 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount, watch } from "vue";
+import { ref, computed, onMounted, onBeforeUnmount, watch } from "vue";
 import { useStudio } from "../store";
 import type { EngineAPI } from "../scene/engine";
+import { buildRenderPreset } from "../domain/build-plans";
+const props = withDefaults(defineProps<{ mode?: "room" | "build" }>(), {
+  mode: "room",
+});
+const emit = defineEmits<{ ready: [value: boolean] }>();
 const s = useStudio();
+const rendering = computed(() =>
+  props.mode === "build" ? buildRenderPreset(s.preset) : s.preset,
+);
 const host = ref<HTMLElement>();
 const shell = ref<HTMLElement>();
 async function fullscreen() {
@@ -29,7 +37,7 @@ function scheduleUpdate() {
   if (updateFrame || stopped) return;
   updateFrame = requestAnimationFrame(() => {
     updateFrame = 0;
-    engine?.update(s.preset, s.catalog);
+    engine?.update(rendering.value, s.catalog);
   });
 }
 async function load() {
@@ -37,6 +45,7 @@ async function load() {
   const attempt = ++generation;
   const current = () => !stopped && attempt === generation;
   loading.value = true;
+  emit("ready", false);
   fps.value = 0;
   engine?.dispose();
   engine = undefined;
@@ -58,15 +67,17 @@ async function load() {
       (value) => {
         if (current()) fps.value = value;
       },
+      { mode: props.mode },
     );
     if (!current()) {
       next.dispose();
       return;
     }
     engine = next;
-    engine.update(s.preset, s.catalog);
+    engine.update(rendering.value, s.catalog);
     engine.select(s.selected);
     engine.fridge(fridgeOpen.value);
+    emit("ready", true);
     if (import.meta.env.DEV)
       (window as any).__frost = {
         diagnostics: () => engine?.diagnostics(),
@@ -118,8 +129,28 @@ watch(
 );
 watch(
   () => s.cameraRevision,
-  () => engine?.focus(s.preset.camera),
+  () => engine?.focus(rendering.value.camera),
 );
+function rotate(enabled: boolean) {
+  engine?.rotate(enabled);
+}
+function zoom(factor: number) {
+  engine?.zoom(factor);
+}
+function resetView() {
+  engine?.focus(rendering.value.camera);
+}
+async function downloadImage() {
+  if (!engine) throw Error("3D 尚未就绪，请稍后再试");
+  const blob = await engine.snapshot();
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "霜境装机预览.png";
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+defineExpose({ rotate, zoom, resetView, downloadImage });
 onMounted(load);
 onBeforeUnmount(() => {
   stopped = true;
@@ -133,7 +164,7 @@ onBeforeUnmount(() => {
   <section ref="shell" class="scene-shell">
     <div ref="host" class="canvas-host"></div>
     <button class="fullscreen-button" @click="fullscreen">全屏 / 退出</button>
-    <details class="fridge-controls">
+    <details v-if="props.mode === 'room'" class="fridge-controls">
       <summary>房间互动</summary>
       <div>
         <button @click="toggleFridge">
@@ -166,6 +197,7 @@ onBeforeUnmount(() => {
         重试场景
       </button>
     </div>
+    <slot />
   </section>
 </template>
 <style scoped>

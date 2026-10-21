@@ -79,6 +79,8 @@ test("导入不同内存套装后容量说明同步，清空预算恢复为未�
 });
 
 test("保存与预算调整不重建场景，也不改变相机", async ({ page }) => {
+  // Isolate persistence from the independent entrance-camera animation.
+  await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/#studio");
   await expect(page.getByText("场景就绪 · 原创参数化模型")).toBeVisible({
     timeout: 30000,

@@ -218,6 +218,8 @@ export const instanceSchema = z
 export const presetSchema = z
   .object({
     schemaVersion: z.literal(1),
+    name: z.string().trim().min(1).max(80).default("霜境装机方案"),
+    savedPlanId: z.string().uuid().nullable().default(null),
     savedAt: z.string().nullable(),
     layoutVersion: z.union([z.literal(1),z.literal(2)]).default(1),
     instances: z.array(instanceSchema).max(100),

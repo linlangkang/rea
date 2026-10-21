@@ -75,7 +75,7 @@ const showChecks = ref(false),
 function start(camera: typeof s.preset.camera = "pc") {
   s.preset.camera = camera;
   s.cameraRevision++;
-  location.hash = "studio";
+  location.hash = camera === "pc" ? "build" : "studio";
 }
 function apply(sku: SKU) {
   const targets = replacementTargets(s.preset, s.catalog, sku);
@@ -151,6 +151,7 @@ function exportList() {
         ><span>装机与空间</span></a
       >
       <nav aria-label="主导航">
+        <a href="#build">3D 装机</a>
         <a href="#home" :aria-current="page === 'home' ? 'page' : undefined"
           >探索</a
         ><a href="#parts" :aria-current="page === 'parts' ? 'page' : undefined"

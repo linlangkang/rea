@@ -20,6 +20,9 @@ import { cameraPoses } from "./layout";
 import { contactShadow } from "./contact";
 import type { BuildPreset, Catalog } from "../domain/schema";
 export type EngineAPI = {
+  rotate: (enabled: boolean) => void;
+  zoom: (factor: number) => void;
+  snapshot: () => Promise<Blob>;
   exportRoom: () => Promise<void>;
   inspectHardware: (name: string) => void;
   fridge: (open: boolean) => void;
@@ -36,14 +39,20 @@ export async function createEngine(
   onSelect: (id: string | null) => void,
   onStatus: (s: string) => void,
   onMetrics: (fps: number) => void,
+  options: { mode?: "room" | "build" } = {},
 ): Promise<EngineAPI> {
+  const buildMode = options.mode === "build";
+  let autoRotate = false;
   const renderer = new T.WebGLRenderer({
     antialias: true,
     alpha: false,
     powerPreference: "high-performance",
   });
   host.appendChild(renderer.domElement);
-  renderer.domElement.setAttribute("aria-label", "可旋转的 3D 电竞房间");
+  renderer.domElement.setAttribute(
+    "aria-label",
+    buildMode ? "可旋转的 3D 主机装配" : "可旋转的 3D 电竞房间",
+  );
   renderer.domElement.setAttribute("role", "img");
   renderer.setClearColor("#101b2a");
   renderer.shadowMap.enabled = true;
@@ -64,7 +73,7 @@ export async function createEngine(
   controls.enableDamping = true;
   controls.dampingFactor = 0.09;
   controls.minDistance = 0.3;
-  controls.maxDistance = 21;
+  controls.maxDistance = buildMode ? 5 : 21;
   controls.maxPolarAngle = Math.PI / 2 - 0.04;
   controls.target.set(0, 0.7, 0);
   camera.position.set(9, 8, 11);
@@ -76,10 +85,10 @@ export async function createEngine(
   sun.shadow.autoUpdate = false;
   sun.shadow.mapSize.set(1024, 1024);
   Object.assign(sun.shadow.camera, {
-    left: -6,
-    right: 6,
-    top: 6,
-    bottom: -6,
+    left: buildMode ? -0.8 : -6,
+    right: buildMode ? 0.8 : 6,
+    top: buildMode ? 0.8 : 6,
+    bottom: buildMode ? -0.8 : -6,
     near: 0.5,
     far: 25,
   });
@@ -89,16 +98,16 @@ export async function createEngine(
   scene.add(sun);
   const accent = new T.PointLight("#89c9f0", 0.1, 3.2);
   accent.position.set(-2.9, 0.5, -0.65);
-  scene.add(accent);
+  if (!buildMode) scene.add(accent);
   RectAreaLightUniformsLib.init();
   const roomLight = new T.RectAreaLight("#ffdcad", 1, 5, 5);
   roomLight.position.set(0.5, 2.93, 0);
   roomLight.rotation.x = -Math.PI / 2;
-  scene.add(roomLight);
+  if (!buildMode) scene.add(roomLight);
   const windowLight = new T.RectAreaLight("#e4edfa", 1.2, 6, 2.5);
-  scene.add(windowLight);
+  if (!buildMode) scene.add(windowLight);
   const screenLight = new T.RectAreaLight("#bbd6ee", 0.1, 1.15, 0.29);
-  scene.add(screenLight);
+  if (!buildMode) scene.add(screenLight);
   const fill = new T.DirectionalLight("#e2edff", 0.45);
   fill.position.set(-5, 3, -6);
   scene.add(fill);
@@ -124,12 +133,13 @@ export async function createEngine(
   let pcPhoto: T.Texture | undefined,
     tvPhoto: T.Texture | undefined,
     tvMode = "";
-  loadTexture("environment/mountain.png", true)
-    .then((t) => {
-      pcPhoto = t;
-      lastPcPaint = -Infinity;
-    })
-    .catch(() => {});
+  if (!buildMode)
+    loadTexture("environment/mountain.png", true)
+      .then((t) => {
+        pcPhoto = t;
+        lastPcPaint = -Infinity;
+      })
+      .catch(() => {});
   let world = new T.Group();
   scene.add(world);
   let groups = new Map<string, T.Group>();
@@ -182,6 +192,7 @@ export async function createEngine(
   let frame = 0,
     disposed = false,
     contextLost = false,
+    inViewport = true,
     visible = !document.hidden,
     last = performance.now(),
     frames = 0,
@@ -335,44 +346,63 @@ export async function createEngine(
     world = new T.Group();
     scene.add(world);
     groups = new Map();
-    const room = makeRoom(p.room, p.scenery);
+    const room = buildMode ? new T.Group() : makeRoom(p.room, p.scenery);
     world.add(room);
-    assetState.set("model:long-life-food", "loading");
-    void new GLTFLoader(createAssetManager())
-      .loadAsync(
-        `${import.meta.env.BASE_URL}models/long-life-food/long_life_food.gltf`,
-      )
-      .then((gltf) => {
-        if (disposed || current !== version) {
-          disposeObject(gltf.scene);
-          return;
-        }
-        const bounds = new T.Box3().setFromObject(gltf.scene),
-          size = bounds.getSize(new T.Vector3()),
-          center = bounds.getCenter(new T.Vector3());
-        gltf.scene.position.set(-center.x, -bounds.min.y, -center.z);
-        const pantry = new T.Group();
-        pantry.name = "CC0_LongLifeFood_MiaPecinaZorko";
-        pantry.add(gltf.scene);
-        pantry.scale.setScalar(
-          Math.min(0.52 / size.x, 0.29 / size.y, 0.35 / size.z),
-        );
-        pantry.rotation.y = -Math.PI / 2;
-        pantry.position.set(p.room[0] / 2 - 0.36, 2.248, -1.88);
-        pantry.traverse((o) => {
-          if (o instanceof T.Mesh) {
-            o.castShadow = o.receiveShadow = true;
+    if (buildMode) {
+      const floor = new T.Mesh(
+        new T.PlaneGeometry(6, 6),
+        new T.MeshStandardMaterial({ color: "#f0f2f5", roughness: 0.9 }),
+      );
+      floor.rotation.x = -Math.PI / 2;
+      floor.position.y = -0.004;
+      floor.receiveShadow = true;
+      floor.userData.noPick = true;
+      room.add(floor);
+      const shadow = contactShadow(0.48, 0.55);
+      room.add(shadow);
+      const grid = new T.GridHelper(3, 30, "#d3dbe3", "#e8ecf0");
+      grid.position.y = -0.002;
+      grid.userData.noPick = true;
+      room.add(grid);
+    }
+    if (!buildMode) {
+      assetState.set("model:long-life-food", "loading");
+      void new GLTFLoader(createAssetManager())
+        .loadAsync(
+          `${import.meta.env.BASE_URL}models/long-life-food/long_life_food.gltf`,
+        )
+        .then((gltf) => {
+          if (disposed || current !== version) {
+            disposeObject(gltf.scene);
+            return;
           }
+          const bounds = new T.Box3().setFromObject(gltf.scene),
+            size = bounds.getSize(new T.Vector3()),
+            center = bounds.getCenter(new T.Vector3());
+          gltf.scene.position.set(-center.x, -bounds.min.y, -center.z);
+          const pantry = new T.Group();
+          pantry.name = "CC0_LongLifeFood_MiaPecinaZorko";
+          pantry.add(gltf.scene);
+          pantry.scale.setScalar(
+            Math.min(0.52 / size.x, 0.29 / size.y, 0.35 / size.z),
+          );
+          pantry.rotation.y = -Math.PI / 2;
+          pantry.position.set(p.room[0] / 2 - 0.36, 2.248, -1.88);
+          pantry.traverse((o) => {
+            if (o instanceof T.Mesh) {
+              o.castShadow = o.receiveShadow = true;
+            }
+          });
+          room.add(pantry);
+          batchStaticMeshes(pantry);
+          shadowDirty = true;
+          assetState.set("model:long-life-food", "ready");
+        })
+        .catch(() => {
+          if (!disposed && current === version)
+            assetState.set("model:long-life-food", "failed");
         });
-        room.add(pantry);
-        batchStaticMeshes(pantry);
-        shadowDirty = true;
-        assetState.set("model:long-life-food", "ready");
-      })
-      .catch(() => {
-        if (!disposed && current === version)
-          assetState.set("model:long-life-food", "failed");
-      });
+    }
     for (const i of p.instances) {
       if (internalIds.includes(i.id) || i.id === "case") continue;
       const sku = c.skus.find((s) => s.id === i.skuId);
@@ -495,7 +525,7 @@ export async function createEngine(
     }
     if (panel) panel.visible = p.sidePanel;
     updateDebug();
-    if (tvMode !== p.tvWallpaper) {
+    if (!buildMode && tvMode !== p.tvWallpaper) {
       tvMode = p.tvWallpaper;
       const mode = tvMode;
       loadTexture(`environment/${mode}.png`, true)
@@ -700,6 +730,21 @@ export async function createEngine(
       screenLight.intensity = p.brightness * (p.night ? 0.55 : 0.05);
       for (const m of warmLights) m.emissiveIntensity = p.night ? 1.4 : 0.25;
       renderer.setClearColor(p.night ? "#203042" : "#abc3d0");
+      if (buildMode) {
+        sun.position.set(2, 4, 3);
+        sun.color.set("#fffaf3");
+        sun.intensity = 2;
+        ambient.intensity = 0.8;
+        fill.intensity = 0.5;
+        bounce.intensity = 0.12;
+        roomLight.intensity =
+          windowLight.intensity =
+          screenLight.intensity =
+          accent.intensity =
+            0;
+        scene.environmentIntensity = 0.75;
+        renderer.setClearColor("#f0f2f5");
+      }
       for (const m of screens) m.color.setScalar(p.brightness);
       lightingDirty = false;
     }
@@ -766,7 +811,9 @@ export async function createEngine(
       lastShadow = now;
       shadowUpdates++;
     }
-    controls.update();
+    controls.autoRotate = autoRotate && !reduced.matches;
+    controls.autoRotateSpeed = 1;
+    controls.update(dt);
     renderer.render(scene, camera);
     frames++;
     if (now - metricStart > 1500) {
@@ -838,13 +885,21 @@ export async function createEngine(
   renderer.domElement.addEventListener("pointermove", pointerMove);
   renderer.domElement.addEventListener("pointerup", pointerUp);
   const visibility = () => {
-    visible = !document.hidden && !contextLost;
+    visible = !document.hidden && !contextLost && inViewport;
     last = performance.now();
     metricStart = last;
     frames = 0;
     cancelAnimationFrame(frame);
     if (visible && !disposed) frame = requestAnimationFrame(tick);
   };
+  const viewportObserver = new IntersectionObserver(([entry]) => {
+    inViewport =
+      entry.isIntersecting &&
+      entry.intersectionRect.width > 0 &&
+      entry.intersectionRect.height > 0;
+    visibility();
+  });
+  viewportObserver.observe(host);
   const motionChanged = () => {
     lightingDirty = true;
   };
@@ -861,6 +916,32 @@ export async function createEngine(
   frame = requestAnimationFrame(tick);
   onStatus("场景就绪 · 原创参数化模型");
   return {
+    rotate(enabled) {
+      autoRotate = enabled;
+    },
+    zoom(factor) {
+      if (!Number.isFinite(factor) || factor <= 0) return;
+      transitioning = false;
+      const offset = camera.position.clone().sub(controls.target);
+      offset.setLength(
+        T.MathUtils.clamp(
+          offset.length() * factor,
+          controls.minDistance,
+          controls.maxDistance,
+        ),
+      );
+      camera.position.copy(controls.target).add(offset);
+      controls.update();
+    },
+    async snapshot() {
+      renderer.render(scene, camera);
+      return new Promise((resolve, reject) =>
+        renderer.domElement.toBlob(
+          (blob) => (blob ? resolve(blob) : reject(Error("图片导出失败"))),
+          "image/png",
+        ),
+      );
+    },
     fridge(open) {
       fridgeOpen = open;
     },
@@ -1023,6 +1104,9 @@ export async function createEngine(
       });
       return {
         updates,
+        mode: buildMode ? "build" : "room",
+        rendering: visible && !disposed,
+        autoRotate: controls.autoRotate,
         rebuilds,
         pcDetail: pcDetailFull ? "full" : "distant",
         batching,
@@ -1094,6 +1178,7 @@ export async function createEngine(
       disposed = true;
       cancelAnimationFrame(frame);
       observer.disconnect();
+      viewportObserver.disconnect();
       controls.dispose();
       clearSelection();
       disposeObject(world);

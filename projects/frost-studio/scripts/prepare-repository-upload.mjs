@@ -5,11 +5,24 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const source=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const destination=path.resolve(process.argv[2] ?? '');
+const update=process.argv[3]==='--update';
 if(!process.argv[2] || path.basename(destination)!=='frost-studio' || path.basename(path.dirname(destination))!=='projects')throw Error('目标必须是明确指定的 projects/frost-studio 新目录');
-if(await stat(destination).catch(()=>null))throw Error('目标已存在；保留现场，请人工审核后更新');
+if((await stat(destination).catch(()=>null))&&!update)throw Error('目标已存在；使用 --update 仅更新经清单校验、未被修改的已发布副本');
 const repo=path.resolve(destination,'../..');
 const config=await readFile(path.join(repo,'.git','config'),'utf8');
 if(!config.includes('https://github.com/linlangkang/rea.git'))throw Error('目标仓库不匹配');
+const manifestPath=path.join(destination,'docs','UPLOAD_MANIFEST.json');
+let previous;
+if(update){
+ previous=JSON.parse(await readFile(manifestPath,'utf8'));
+ if(previous.repository!=='linlangkang/rea'||previous.directory!=='projects/frost-studio')throw Error('原上传清单目标不匹配');
+ for(const record of previous.manifest){
+   const target=path.resolve(destination,record.path);
+   if(!target.startsWith(destination+path.sep))throw Error('原上传清单路径越界');
+   const content=await readFile(target);
+   if(createHash('sha256').update(content).digest('hex')!==record.sha256)throw Error(`发布副本已有修改，保留现场：${record.path}`);
+ }
+}
 const files=[];
 async function walk(relative){for(const entry of await readdir(path.join(source,relative),{withFileTypes:true})){
   if(entry.isSymbolicLink())throw Error(`拒绝链接：${relative}/${entry.name}`);
@@ -24,7 +37,7 @@ const privatePattern=/ghp_[A-Za-z0-9]{25,}|github_pat_[A-Za-z0-9_]{30,}|sk-[A-Za
 const manifest=[];
 // Validate the entire candidate before writing the destination.
 const candidate=[];
-for(const relative of [...new Set(files)].sort()){
+for(const relative of [...new Set(files)].filter(f=>f!=='docs/UPLOAD_MANIFEST.json').sort()){
   let content=await readFile(path.join(source,relative));
   if(content.length>50_000_000)throw Error(`文件过大：${relative}`);
   const textFile=/\.(md|txt|json|ts|vue|css|html|py|ps1|ini|toml|yml|yaml|mjs|csv|gltf|uproject|svg)$/.test(relative) || ['.gitignore','.dockerignore','Dockerfile','LICENSE'].includes(path.basename(relative));
@@ -35,8 +48,15 @@ for(const relative of [...new Set(files)].sort()){
   }
   candidate.push({relative,content});manifest.push({path:relative,bytes:content.length,sha256:createHash('sha256').update(content).digest('hex')});
 }
+// An update may overwrite only files owned by the previous verified manifest.
+const owned=new Set(previous?.manifest.map(record=>record.path)??[]);
+for(const {relative} of candidate){
+ const target=path.resolve(destination,relative);
+ if(!target.startsWith(destination+path.sep))throw Error('路径越界');
+ if(await stat(target).catch(()=>null))if(!owned.has(relative))throw Error(`目标有非清单文件，保留现场：${relative}`);
+}
 await mkdir(destination,{recursive:true});
-for(const {relative,content} of candidate){const target=path.resolve(destination,relative);if(!target.startsWith(destination+path.sep))throw Error('路径越界');await mkdir(path.dirname(target),{recursive:true});await writeFile(target,content,{flag:'wx'});}
+for(const {relative,content} of candidate){const target=path.resolve(destination,relative);await mkdir(path.dirname(target),{recursive:true});await writeFile(target,content,{flag:owned.has(relative)?'w':'wx'});}
 const report={repository:'linlangkang/rea',directory:'projects/frost-studio',files:manifest.length,bytes:manifest.reduce((n,f)=>n+f.bytes,0),excluded:['node_modules','dist','output','UE content binaries','machine UE config and tokens','private models'],manifest};
-await writeFile(path.join(destination,'docs','UPLOAD_MANIFEST.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});
+await writeFile(manifestPath,JSON.stringify(report,null,2)+'\n',{flag:update?'w':'wx'});
 console.log(JSON.stringify({directory:report.directory,files:report.files,bytes:report.bytes,excluded:report.excluded},null,2));

@@ -86,6 +86,7 @@ function download(data: unknown, name: string) {
         ><span>霜境 <small>FROST STUDIO</small></span></a
       >
       <nav class="studio-nav" aria-label="工作台导航">
+        <a href="#build">装机</a>
         <a href="#home">首页</a><a href="#parts">选配</a
         ><a href="#compare">比较</a><a href="#modules">模组</a>
       </nav>

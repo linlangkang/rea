@@ -1,8 +1,8 @@
 {
   "repository": "linlangkang/rea",
   "directory": "projects/frost-studio",
-  "files": 201,
-  "bytes": 33191642,
+  "files": 207,
+  "bytes": 33268214,
   "excluded": [
     "node_modules",
     "dist",
@@ -54,8 +54,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7344,
-      "sha256": "21c403b53c0808d0aded206b16856197e4bd35bb036915d175519b0f6fb61596"
+      "bytes": 7891,
+      "sha256": "8f707c258edef1a5f130890280b745f847e67b1aa26f930a5d5b327903b65828"
     },
     {
       "path": "deploy/nginx.conf",
@@ -64,8 +64,8 @@
     },
     {
       "path": "design-qa.md",
-      "bytes": 5679,
-      "sha256": "3edd483b79d3f629ba87ab40cce86ec4f624f3b641b0b1364fd3b80d09e7d272"
+      "bytes": 10145,
+      "sha256": "8ad4157d3202b6665ba956cbad39060dbe3b1c44212f8e00023ca654fb3cfa5f"
     },
     {
       "path": "docs/ACCEPTANCE-V2.md",
@@ -79,8 +79,8 @@
     },
     {
       "path": "docs/BUILDCORES_CN.md",
-      "bytes": 3728,
-      "sha256": "1a31c186df3642d99b2ccde6c24009b434dd020da0a4bfcb88722f1f3af7ccfd"
+      "bytes": 6251,
+      "sha256": "ac36a92af94d8b30ba24ca2dded39375b750998a2e792cbd8b38dbea140f706f"
     },
     {
       "path": "docs/CHARACTER-V5.md",
@@ -89,8 +89,8 @@
     },
     {
       "path": "docs/DATA.md",
-      "bytes": 2261,
-      "sha256": "c29e6f6bc7e324e7a99804f8c8593e0a296bb1226c0b90e0c23c0a334649882b"
+      "bytes": 2821,
+      "sha256": "0b8877db319e03a19eaef54baab20b6963b4d3d871948802f2e0320b33d1d271"
     },
     {
       "path": "docs/DEPLOYMENT.md",
@@ -548,6 +548,11 @@
       "sha256": "6d00bda04aa58b276ad46315e9a2a56f6af8555657b2181338a900b09b7b5857"
     },
     {
+      "path": "scripts/capture-setup-reference.mjs",
+      "bytes": 1552,
+      "sha256": "a43b1438719123d25adfe74a00e9bacaa3cfc32e2ca00446dc3000fbc1e3d9f4"
+    },
+    {
       "path": "scripts/check-environment-performance.mjs",
       "bytes": 1701,
       "sha256": "dd1ff6ad522f544834aeaf35cffd2ff402e13fe64380c18d433795159e0e3091"
@@ -599,8 +604,8 @@
     },
     {
       "path": "scripts/prepare-repository-upload.mjs",
-      "bytes": 4320,
-      "sha256": "7249fc3d3ff5f760120aef6a220867ff55dad419499a930cf56c6fe7b511c5a1"
+      "bytes": 5492,
+      "sha256": "87714b2075bc1a5b3f969d421e08bd357cae82f3c7c2fa64f882b13122190233"
     },
     {
       "path": "scripts/rea-analysis.mjs",
@@ -619,13 +624,18 @@
     },
     {
       "path": "src/App.vue",
-      "bytes": 787,
-      "sha256": "c4aa0514c9a7c322682b2f2420c240acb7a030340ae7fec602030ec797ee36ef"
+      "bytes": 953,
+      "sha256": "01cfd692f184ada38478a5daadb384152cecc143ab084ab46a9616ad4fb7e6fe"
     },
     {
       "path": "src/Studio.vue",
-      "bytes": 14727,
-      "sha256": "490ffbb158d49cef9162a96bcf49cf271b83a14d0dfd18eecf256e46b2b1feb4"
+      "bytes": 14763,
+      "sha256": "ca675839a9462ac94624a2d070abe3b27f3d5afe7f5805b13868bb3cbbf463d4"
+    },
+    {
+      "path": "src/components/BuildWorkspace.vue",
+      "bytes": 24897,
+      "sha256": "2e46787375afb5e6d7c65c65492043c66114b6f3205dd139ca81fef34a9c0c9d"
     },
     {
       "path": "src/components/CatalogPanel.vue",
@@ -664,8 +674,8 @@
     },
     {
       "path": "src/components/Portal.vue",
-      "bytes": 28433,
-      "sha256": "c9e1531eda8a848723c2cf89757af5051676c885e34d90350a992ab65c3905db"
+      "bytes": 28500,
+      "sha256": "30a8093999fb1a7438aed413e1d30c342720f107540319c436dcb4b7918fb0dd"
     },
     {
       "path": "src/components/PreviewToggle.vue",
@@ -679,8 +689,8 @@
     },
     {
       "path": "src/components/SceneView.vue",
-      "bytes": 5405,
-      "sha256": "608b4f1c34babfa3830ce6526d68cda2cd3d9e3b7c0abbdef5d6c6cae27cbc00"
+      "bytes": 6458,
+      "sha256": "cabb6f5e33a6f9e77573129034ae01a451ef8b7cfde17f85be560a9ef291967e"
     },
     {
       "path": "src/components/SearchField.vue",
@@ -693,14 +703,19 @@
       "sha256": "b68d13bb9151df3afd015ded14659827797bb2865143774f6558214a30b3dbd2"
     },
     {
+      "path": "src/components/build-workspace.css",
+      "bytes": 19583,
+      "sha256": "ca853deca6fb4fb13d613374ce73f8e1766ab560eac36c65ad736cd6ef0ea9fa"
+    },
+    {
       "path": "src/components/portal.css",
       "bytes": 23146,
       "sha256": "b8703ad3b22531ced174e9155fc3b771b9220c089e47f89ed026740202c5db03"
     },
     {
       "path": "src/data/catalog.ts",
-      "bytes": 7979,
-      "sha256": "037924a4cd10a367478d5062bad9b6d2436531f1517ee473f3e449576571efa4"
+      "bytes": 8030,
+      "sha256": "ab22cb6f71676c1587f19c1b197dfce39a49130414ffc370483475c11e811614"
     },
     {
       "path": "src/data/expansion.ts",
@@ -711,6 +726,11 @@
       "path": "src/data/research.ts",
       "bytes": 1911,
       "sha256": "2d779250b5ae4b8c6aba82df432716ce9c11cbe86903f76a4a7c01d2a106e743"
+    },
+    {
+      "path": "src/domain/build-plans.ts",
+      "bytes": 3756,
+      "sha256": "1466b2f5573e4a7fe8189f9d97c504521cddf3cbd0857431577f907ef3b2f004"
     },
     {
       "path": "src/domain/catalog-updates.ts",
@@ -724,8 +744,8 @@
     },
     {
       "path": "src/domain/schema.ts",
-      "bytes": 7458,
-      "sha256": "6ae4841e5a097dd8ed2423f59cb0ed4ba8145356b48c866928c14d88c8f226c6"
+      "bytes": 7593,
+      "sha256": "0b44b78a2ba3aa227c184270425c1b43046bbf3df83066f91882053900ac534a"
     },
     {
       "path": "src/domain/storage.ts",
@@ -764,8 +784,8 @@
     },
     {
       "path": "src/scene/engine.ts",
-      "bytes": 37644,
-      "sha256": "bf82bd766b1754d42865d50eba57a6ea1848276529352163a93d19c69de3998d"
+      "bytes": 40585,
+      "sha256": "1bb857c641110c43beeccab16f40b7fc10c8d9b7132405fae4e4189eea5386b2"
     },
     {
       "path": "src/scene/hardware.ts",
@@ -824,13 +844,18 @@
     },
     {
       "path": "src/store.ts",
-      "bytes": 4687,
-      "sha256": "6cd5f52a7e07e522065097f01061e89b515557bb6061242034326f37ae4b2617"
+      "bytes": 4726,
+      "sha256": "1a0a47dfd5167396dd340aa83acbb6a2ea2687eacde9f08e8639482f1b9a7a60"
     },
     {
       "path": "src/style.css",
       "bytes": 19586,
       "sha256": "92c663d8bd4cd52f792a7ec05364dd4d1312259a023de589100459b513145203"
+    },
+    {
+      "path": "tests/browser/build-workspace.spec.ts",
+      "bytes": 9454,
+      "sha256": "2683e04e168d1c57c32425ca557b4aa66a968431f6dc60e8a9feec9193c7b534"
     },
     {
       "path": "tests/browser/minimal-ui.spec.ts",
@@ -839,8 +864,8 @@
     },
     {
       "path": "tests/browser/optimization.spec.ts",
-      "bytes": 4355,
-      "sha256": "57afc1c7f70a1aa399d3aa33b887270b0892cfe1947b61a51bebcfc678bc4567"
+      "bytes": 4484,
+      "sha256": "2cea13ea88c1dab75413660d495a117659ba38ad56fb94372bbbefd0f80c6ad8"
     },
     {
       "path": "tests/browser/portal.spec.ts",
@@ -886,6 +911,11 @@
       "path": "tests/logic/batch.test.ts",
       "bytes": 3573,
       "sha256": "dc572580f720952edb4a612d66a4890d310c1be4e2cdafa4d61e3c56e71e3f04"
+    },
+    {
+      "path": "tests/logic/build-plans.test.ts",
+      "bytes": 3445,
+      "sha256": "d126a4784b6b689dcd29f20f60685583c5c4e021056119a3e95ec0b61f1694b0"
     },
     {
       "path": "tests/logic/catalog-updates.test.ts",
@@ -1017,6 +1047,5 @@
       "bytes": 131,
       "sha256": "c9e1b0eb87a3828dd1b46402f03f68c96f049217d8c8a6751b4260e29fe6ab9a"
     }
-  ],
-  "hashScope": "Upload payload with UTF-8 text line endings normalized to LF"
+  ]
 }

@@ -56,8 +56,10 @@ export const useStudio = defineStore("studio", () => {
       saveState(localStorage, next, catalog.value);
       preset.value.savedAt = next.savedAt;
       notice.value = "方案已保存到当前浏览器";
+      return true;
     } catch {
       notice.value = "保存失败：存储不可用或已满，请导出备份";
+      return false;
     }
   }
   function reset() {

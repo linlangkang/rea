@@ -287,6 +287,8 @@ catalog.skus.push(
 expandCatalog(catalog);
 export const defaultPreset = (): BuildPreset => ({
   schemaVersion: 1,
+  name: "霜境装机方案",
+  savedPlanId: null,
   layoutVersion: 2,
   savedAt: null,
   instances: rows

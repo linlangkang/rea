@@ -3,6 +3,9 @@ import { ref, computed, defineAsyncComponent, onBeforeUnmount } from "vue";
 import { useStudio } from "./store";
 import Portal from "./components/Portal.vue";
 const Studio = defineAsyncComponent(() => import("./Studio.vue"));
+const BuildWorkspace = defineAsyncComponent(
+  () => import("./components/BuildWorkspace.vue"),
+);
 const s = useStudio();
 s.restore();
 const hash = ref(location.hash.slice(1) || "home");
@@ -19,5 +22,7 @@ window.addEventListener("hashchange", navigate);
 onBeforeUnmount(() => window.removeEventListener("hashchange", navigate));
 </script>
 <template>
-  <Studio v-if="hash === 'studio'" /><Portal v-else :page="page" />
+  <BuildWorkspace v-if="hash.split('?')[0] === 'build'" /><Studio
+    v-else-if="hash === 'studio'"
+  /><Portal v-else :page="page" />
 </template>
